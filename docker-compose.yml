@@ -1,0 +1,12 @@
+services:
+  react:
+    build: .
+    container_name: react-container
+    ports:
+      - "3000:3000"
+    command: npm start
+
+    # si le projet est en local en utulise les voulumes (-v) pour le lier au fichier source (app)
+    # volumes:
+    #   -"./:app"
+    #   -"/app/node_modules"
